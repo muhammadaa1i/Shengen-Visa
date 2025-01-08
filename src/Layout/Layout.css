@@ -1,0 +1,11 @@
+@media (max-width: 550px){
+    .navbar{
+        background-image: none!important;
+    }
+    .bars{
+        font-size: 24px;
+    }
+    .telephone{
+        display: block;
+    }
+}
