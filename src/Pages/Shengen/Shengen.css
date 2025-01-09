@@ -19,7 +19,7 @@
 
 @media screen and (max-width:500px) {
     .sec-video{
-        height: 30vh;
+        height: 80vh;
     }
     .main{
         padding-left: 20px;
@@ -29,10 +29,16 @@
 
 @media screen and (max-width:350px) {
     .sec-video{
-        height: 30vh;
+        height: 70vh;
     }
     .main{
         padding-left: 10px;
         padding-right: 10px;
+    }
+}
+
+@media screen and (min-width:992px){
+    .sec-video{
+        height: 60vh;
     }
 }

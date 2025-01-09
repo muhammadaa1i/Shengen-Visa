@@ -73,9 +73,13 @@ const Layout = () => {
                         <h1 className="text-lg font-medium uppercase sm:text-xl">Ariza qoldirish</h1>
                         <form id="myForm" className="w-[300px] border-2 flex flex-col gap-2 ">
                             <h1 className="text-lg font-normal text-white sm:text-xl">Ism:</h1>
-                            <input type="text" placeholder="Ismingiz" className="max-w-[200px] w-full" />
+                            <input type="text" placeholder="Ismingiz" className="max-w-[200px] w-full p-1 outline-none text-black" />
                             <h1 className="text-lg font-normal text-white sm:text-xl">Familiya:</h1>
-                            <input type="text" placeholder="Familiyangiz:" className="max-w-[200px] w-full" />
+                            <input type="text" placeholder="Familiyangiz" className="max-w-[200px] w-full p-1 outline-none text-black" />
+                            <h1 className="text-lg font-normal text-white sm:text-xl">Telefon:</h1>
+                            <input type="number" placeholder="Telefon raqamingiz" className="max-w-[200px] w-full p-1 outline-none text-black" />
+                            <h1 className="text-lg font-normal text-white sm:text-xl">Komentriya:</h1>
+                            <input type="text" placeholder="Fikringiz" className="flex items-start max-w-[200px] w-full h-44 p-1 outline-none text-black" />
                         </form>
                     </section>
                     <section className="max-w-[700px] w-full h-auto flex flex-col sm:flex-row justify-around max-sm:gap-5">

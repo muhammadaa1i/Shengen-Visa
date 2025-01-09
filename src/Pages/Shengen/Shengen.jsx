@@ -21,7 +21,7 @@ const Shengen = () => {
                 </h1>
             </div>
             <section className="sec container m-auto max-md:px-1 flex flex-col md:flex-row gap-4 max-sm:px-1 mt-5 items-center">
-                <video controls className="sec-video h-[40vh] sm:h-[50vh] md:h-[60vh] rounded-3xl" src={shvideo1}></video>
+                <video controls className="sec-video h-[90vh] rounded-3xl" src={shvideo1}></video>
                 <div className="flex flex-col min-h-[650px] my-3 justify-evenly">
                     <div className="bg-[#264796] w-[100%] h-1 rounded-lg" ></div>
                     <h2 className="sec-text text-lg font-medium sm:text-xl ">
@@ -61,7 +61,7 @@ const Shengen = () => {
                 </h2>
             </div>
             <section className="sec container m-auto max-md:px-1 flex flex-col md:flex-row gap-4 max-sm:px-1 mt-5 items-center">
-                <video controls className="sec-video h-[40vh] sm:h-[50vh] md:h-[60vh] rounded-3xl" src={shvideo2}></video>
+                <video controls className="sec-video h-[90vh] rounded-3xl" src={shvideo2}></video>
                 <div className="flex flex-col min-h-[650px] my-3 justify-evenly">
                     <div className="bg-[#264796] w-[100%] h-1 rounded-lg" ></div>
                     <h2 className="sec-text text-lg font-medium sm:text-xl ">
