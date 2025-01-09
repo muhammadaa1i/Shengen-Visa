@@ -1,0 +1,38 @@
+@media screen and (max-width:1400px) {
+    .sec{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width:992px) {
+    .sec{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:950px) {
+    .sec-text{
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .sec-video{
+        height: 30vh;
+    }
+    .main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .sec-video{
+        height: 30vh;
+    }
+    .main{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

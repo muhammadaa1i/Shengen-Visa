@@ -19,7 +19,7 @@ const Layout = () => {
                         backgroundPositionX: "center"
                     }}>
                     <a href="/">
-                        <img className="w-16 h-16 ml-2 " src={logo} alt="logo of company" />
+                        <img className="w-16 h-16 ml-2" src={logo} alt="logo of company" />
                     </a>
                     <a className="telephone hidden text-black no-underline font-normal text-base absolute right-14" href="tel:+998955153030">+998 95 515 30 30</a>
                     <button
@@ -67,13 +67,47 @@ const Layout = () => {
                 <Outlet />
             </main>
 
-            {/* <footer>
-                <p>© 2025 Muhammadali-Dev</p>
-                <a className="flex flex-row items-center gap-1" target="blank" href="https://www.instagram.com/xusanovv.m/?hl=en">
-                    <i className="fa-brands fa-instagram"></i>
-                    <h4>xusanovv.m</h4>
-                </a>
-            </footer> */}
+            <footer>
+                <div className="footer container flex flex-col justify-center lg:justify-between bg-[#020C26] rounded-3xl m-auto my-5 h-auto text-white px-4 py-5 lg:flex-row ">
+                    <section className="max-lg:max-w-[270px] max-lg:m-auto max-lg:mb-5 flex flex-col gap-4 mt-10 ml-4">
+                        <h1 className="text-lg font-medium uppercase sm:text-xl">Ariza qoldirish</h1>
+                        <form id="myForm" className="w-[300px] border-2 flex flex-col gap-2 ">
+                            <h1 className="text-lg font-normal text-white sm:text-xl">Ism:</h1>
+                            <input type="text" placeholder="Ismingiz" className="max-w-[200px] w-full" />
+                            <h1 className="text-lg font-normal text-white sm:text-xl">Familiya:</h1>
+                            <input type="text" placeholder="Familiyangiz:" className="max-w-[200px] w-full" />
+                        </form>
+                    </section>
+                    <section className="max-w-[700px] w-full h-auto flex flex-col sm:flex-row justify-around max-sm:gap-5">
+                        <div className="max-w-[225px] w-full flex flex-col gap-3 max-sm:m-auto">
+
+                        </div>
+                        <div className="max-w-[225px] w-full flex flex-col gap-3 max-sm:m-auto">
+                            <h1 className="text-lg font-medium uppercase sm:text-xl">kontakt</h1>
+                            <div className="flex flex-row items-center gap-3">
+                                <p className="text-lg font-extralight text-white sm:text-xl">Tel:</p>
+                                <div className="flex flex-col gap-1 p-0 w-auto">
+                                    <a target="_blank
+                                " className="text-lg font-extralight text-white no-underline sm:text-xl" href="tel:+998958233030">+998 95 823 30 30</a>
+                                    <a target="_blank" className="text-lg font-extralight text-white no-underline sm:text-xl" href="tel:+998955153030">+998 95 515 30 30</a>
+                                </div>
+                            </div>
+                            <a target="_blank" href="https://t.me/shengenvisa_uz" className="text-lg font-extralight text-white sm:text-xl no-underline flex flex-row gap-3">
+                                <i className="fa-brands fa-telegram text-3xl"></i>
+                                shengenvisa_uz
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/shengen_viza_centr?igsh=eWFwYWN1MG10OXB1" className="text-lg font-extralight text-white sm:text-xl no-underline flex flex-row gap-3">
+                                <i className="fa-brands fa-instagram text-3xl"></i>
+                                shengen_viza_centr
+                            </a>
+                            <a target="_blank" href="https://www.google.com/maps?q=41.349947,69.288288&ll=41.349947,69.288288&z=16" className="text-lg font-extralight text-white sm:text-xl no-underline flex flex-row gap-3">
+                                <i className="fa-solid fa-location-dot text-3xl"></i>
+                                Amir Temur shox ko'chasi, Cho'pon ota 5A.
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </footer>
         </div>
     )
 }
