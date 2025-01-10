@@ -9,7 +9,7 @@ const Shengen = () => {
     return (
         <>
             <div
-                className='main w-full h-[80vh] flex justify-center items-center'
+                className='main w-full h-[80vh] flex justify-center items-center mt-14'
                 style={{
                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.226), rgba(0, 0, 0, 0.521)), url(${shbg})`,
                     backgroundRepeat: "no-repeat",
@@ -42,7 +42,7 @@ const Shengen = () => {
                 <h1 className="text-center text-[#264796] font-semibold mt-2 py-3 text-4xl">
                     Shengen Visalari necha foizi maqullangan?
                 </h1>
-                <h2 className="sec-text text-lg font-medium sm:text-xl ">
+                <h2 className="sec-text text-lg font-medium sm:text-xl max-sm:mx-6 ">
                     Yevrokomissiya 2023-yil uchun Shengen vizalarini berish natijalarini sarhisob qildi:
                     <br />
                     Shengen viza bo‘yicha murojaatlarning umumiy soni 37 foizga oshib, 10,3 million arizaga yetgan. So‘rovlar soni bo‘yicha birinchi 5 davlat:
