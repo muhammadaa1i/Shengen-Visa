@@ -1,17 +1,26 @@
 @media (max-width: 550px){
-    .navbar{
-        background-image: none!important;
+    .telephone{
+        right: 50px;
     }
     .bars{
-        font-size: 24px;
-    }
-    .telephone{
-        display: block;
+        margin-left: 20px;
     }
 }
 
-@media screen and (min-width:1500px) {
-    .navbar{
-        background-image: none!important;
+@media screen and (max-width:480px) {
+    .menu{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:430px) {
+    .menu{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:370px) {
+    .menu{
+        width: 80%;
     }
 }

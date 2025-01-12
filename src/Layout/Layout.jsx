@@ -1,6 +1,5 @@
-import { Link, Outlet } from "react-router-dom"
+import { Link, Outlet, useLocation } from "react-router-dom"
 import logo from '../images/shengen.jpg'
-import bg from '../images/bgshengen.png'
 import { useEffect, useState } from "react"
 import '../Layout/Layout.css'
 import eu from '../images/euflag.png'
@@ -12,7 +11,7 @@ import i from '../images/inflag.jpg'
 import sk from '../images/skflag.png'
 
 const Layout = () => {
-
+    const pathname = useLocation()
     const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
@@ -30,53 +29,67 @@ const Layout = () => {
     return (
         <div>
             <header className="w-[100vw] fixed z-30 top-0">
-                <nav className="navbar bg-white flex flex-row justify-between items-center p-0 shadow-xl"
-                    style={{
-                        backgroundImage: `url(${bg})`,
-                        backgroundRepeat: "no-repeat",
-                        backgroundSize: "30% 100%",
-                        backgroundPositionX: "center"
-                    }}>
+                <nav className="navbar bg-white flex flex-row justify-between items-center p-0 shadow-xl">
                     <a href="/">
                         <img className="w-16 h-14 ml-2" src={logo} alt="logo of company" />
                     </a>
-                    <a className="telephone hidden text-black no-underline font-normal text-base absolute right-14" href="tel:+998955153030">+998 95 515 30 30</a>
+                    <a className="telephone text-black no-underline font-normal text-base absolute right-16" href="tel:+998955153030">+998 95 515 30 30</a>
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="menu-btn w-11 h-11 mr-2">
+                        className="menu-btn w-11 h-11 mr-4 xl:mr-6">
                         <i className="bars fa-solid fa-bars text-2xl text-[#264796]"></i>
                     </button>
-                    <section className={`menu fixed top-0 right-0 h-full w-[50%] md:w-[40%] max-sm:w-[60%] xl:w-[30%] bg-white shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} z-20 transition-transform duration-500 ease-in-out`}>
+                    <section className={`menu fixed top-0 right-0 h-full w-[50%] md:w-[40%] xl:w-[30%] bg-white shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} z-20 transition-transform duration-500 ease-in-out`}>
                         <button onClick={() => setIsOpen(false)} className="fa-solid fa-x absolute left-4 top-4 text-2xl max-sm:text-lg"></button>
-                        <ul className="flex flex-col gap-4 text-2xl mt-20 max-sm:text-lg text-start 
-                            " >
-                            <li className="flex flex-row gap-2 items-center sm:gap-3">
-                                <img className="w-12 h-8 rounded-xl" src={eu} alt="european flag" />
+                        <ul className="ul flex flex-col gap-4 text-2xl mt-20 max-sm:text-lg text-start">
+                            <li className={`relative flex flex-row gap-2 items-center sm:gap-3`}>
+                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={eu} alt="european flag" />
                                 <Link className="text-[#264796] no-underline" to="/" onClick={() => setIsOpen(false)}>Shengen</Link>
+                                {pathname.pathname === '/' && (
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
                             </li>
-                            <li className="flex flex-row gap-2 items-center">
-                                <img className="w-12 h-8 rounded-xl" src={us} alt="us flag" />
+                            <li className={`relative flex flex-row gap-2 items-center`}>
+                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={us} alt="us flag" />
                                 <Link className="text-[#264796] no-underline" to="/aqsh" onClick={() => setIsOpen(false)}>AQSH</Link>
+                                {pathname.pathname === '/aqsh' && (
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
                             </li>
-                            <li className="flex flex-row gap-2 items-center">
-                                <img className="w-12 h-8 rounded-xl" src={gb} alt="uk flag" />
+                            <li className={`relative flex flex-row gap-2 items-center`}>
+                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={gb} alt="uk flag" />
                                 <Link className="text-[#264796] no-underline" to="/britaniya" onClick={() => setIsOpen(false)}>Buyuk Britaniya</Link>
+                                {pathname.pathname === '/britaniya' && (
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[230px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
                             </li>
-                            <li className="flex flex-row gap-2 items-center">
-                                <img className="w-12 h-8 rounded-xl" src={jp} alt="japanese flag" />
+                            <li className={`relative flex flex-row gap-2 items-center`}>
+                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={jp} alt="japanese flag" />
                                 <Link className="text-[#264796] no-underline" to="/yaponiya" onClick={() => setIsOpen(false)}>Yaponiya</Link>
+                                {pathname.pathname === '/yaponiya' && (
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
                             </li>
-                            <li className="flex flex-row gap-2 items-center">
-                                <img className="w-12 h-8 rounded-xl" src={av} alt="avstralian flag" />
+                            <li className={`relative flex flex-row gap-2 items-center`}>
+                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={av} alt="avstralian flag" />
                                 <Link className="text-[#264796] no-underline" to="/avstraliya" onClick={() => setIsOpen(false)}>Avstraliya</Link>
+                                {pathname.pathname === '/avstraliya' && (
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
                             </li>
-                            <li className="flex flex-row gap-2 items-center">
-                                <img className="w-12 h-8 rounded-xl" src={i} alt="indian flag" />
+                            <li className={`relative flex flex-row gap-2 items-center`}>
+                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={i} alt="indian flag" />
                                 <Link className="text-[#264796] no-underline" to="/hindiston" onClick={() => setIsOpen(false)}>Hindiston</Link>
+                                {pathname.pathname === '/hindiston' && (
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
                             </li>
-                            <li className="flex flex-row gap-2 items-center">
-                                <img className="w-12 h-8 rounded-xl" src={sk} alt="south korean flag" />
+                            <li className={`relative flex flex-row gap-2 items-center`}>
+                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={sk} alt="south korean flag" />
                                 <Link className="text-[#264796] no-underline" to="/koreya" onClick={() => setIsOpen(false)}>Janubiy Koreya</Link>
+                                {pathname.pathname === '/koreya' && (
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[220px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                )}
                             </li>
                         </ul>
                     </section>
@@ -88,7 +101,6 @@ const Layout = () => {
                     )}
                 </nav>
             </header>
-
 
             <main>
                 <Outlet />

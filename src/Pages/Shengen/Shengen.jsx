@@ -2,7 +2,7 @@ import shvideo1 from "../../videos/shvideo1.mp4"
 import shvideo2 from '../../videos/shvideo2.mp4'
 import '../../fonts/Fonts.css'
 import Accordion from "./Savollar"
-import shbg from '../../images/shbg1.jpg'
+import shbg from '../../images/shengenbg.jpg'
 import '../Shengen/Shengen.css'
 
 const Shengen = () => {
