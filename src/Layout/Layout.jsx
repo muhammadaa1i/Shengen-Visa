@@ -46,49 +46,49 @@ const Layout = () => {
                                 <img className="w-12 h-8 rounded-xl sm:ml-3" src={eu} alt="european flag" />
                                 <Link className="text-[#264796] no-underline" to="/" onClick={() => setIsOpen(false)}>Shengen</Link>
                                 {pathname.pathname === '/' && (
-                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[2px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <img className="w-12 h-8 rounded-xl sm:ml-3" src={us} alt="us flag" />
                                 <Link className="text-[#264796] no-underline" to="/aqsh" onClick={() => setIsOpen(false)}>AQSH</Link>
                                 {pathname.pathname === '/aqsh' && (
-                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[2px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <img className="w-12 h-8 rounded-xl sm:ml-3" src={gb} alt="uk flag" />
                                 <Link className="text-[#264796] no-underline" to="/britaniya" onClick={() => setIsOpen(false)}>Buyuk Britaniya</Link>
                                 {pathname.pathname === '/britaniya' && (
-                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[230px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[230px]' : 'w-0'} h-[2px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <img className="w-12 h-8 rounded-xl sm:ml-3" src={jp} alt="japanese flag" />
                                 <Link className="text-[#264796] no-underline" to="/yaponiya" onClick={() => setIsOpen(false)}>Yaponiya</Link>
                                 {pathname.pathname === '/yaponiya' && (
-                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[2px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <img className="w-12 h-8 rounded-xl sm:ml-3" src={av} alt="avstralian flag" />
                                 <Link className="text-[#264796] no-underline" to="/avstraliya" onClick={() => setIsOpen(false)}>Avstraliya</Link>
                                 {pathname.pathname === '/avstraliya' && (
-                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[2px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <img className="w-12 h-8 rounded-xl sm:ml-3" src={i} alt="indian flag" />
                                 <Link className="text-[#264796] no-underline" to="/hindiston" onClick={() => setIsOpen(false)}>Hindiston</Link>
                                 {pathname.pathname === '/hindiston' && (
-                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[200px]' : 'w-0'} h-[2px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
                                 <img className="w-12 h-8 rounded-xl sm:ml-3" src={sk} alt="south korean flag" />
                                 <Link className="text-[#264796] no-underline" to="/koreya" onClick={() => setIsOpen(false)}>Janubiy Koreya</Link>
                                 {pathname.pathname === '/koreya' && (
-                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[220px]' : 'w-0'} h-[4px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
+                                    <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[220px]' : 'w-0'} h-[2px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>
                         </ul>
