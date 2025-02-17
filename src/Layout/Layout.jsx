@@ -31,17 +31,40 @@ const Layout = () => {
             <header className="w-[100vw] fixed z-30 top-0">
                 <nav className="navbar bg-white flex flex-row justify-between items-center p-0 shadow-xl">
                     <a href="/">
-                        <img className="w-16 h-14 ml-2" src={logo} alt="logo of company" />
+                        <img className="w-20 h-[70px] max-md:w-16 max-md:h-16 ml-2 2xl:w-24 2xl:h-24" src={logo} alt="logo of company" />
                     </a>
-                    <a className="telephone text-black no-underline font-normal text-base absolute right-16" href="tel:+998955153030">+998 95 515 30 30</a>
+                    <a className="telephone text-black no-underline font-normal text-base absolute right-16 sm:hidden" href="tel:+998955153030">+998 95 515 30 30</a>
+                    <section className="hidden sm:flex items-center justify-center sm:flex-row gap-2 mr-4 ">
+                        <li className="w-20 h-7 bg-[#264796] rounded-[10px] hidden xl:flex items-center justify-center lg:w-32 lg:h-11 ">
+                            <Link className="text-white no-underline text-sm lg:text-xl " to="/" onClick={() => setIsOpen(false)}>Shengen</Link>
+                        </li>
+                        <li className="w-20 h-7 bg-[#264796] rounded-[10px] sm:flex items-center justify-center lg:w-32 lg:h-11 ">
+                            <Link className="text-white no-underline text-sm lg:text-xl " to="/aqsh" onClick={() => setIsOpen(false)}>AQSH</Link>
+                        </li>
+                        <li className="w-20 h-7 bg-[#264796] rounded-[10px] sm:flex items-center justify-center lg:w-32 lg:h-11 ">
+                            <Link className="text-white no-underline text-sm lg:text-xl " to="/britaniya" onClick={() => setIsOpen(false)}>B. Britaniya</Link>
+                        </li>
+                        <li className="w-20 h-7 bg-[#264796] rounded-[10px] sm:flex items-center justify-center lg:w-32 lg:h-11 ">
+                            <Link className="text-white no-underline text-sm lg:text-xl " to="/yaponiya" onClick={() => setIsOpen(false)}>Yaponiya</Link>
+                        </li>
+                        <li className="w-20 h-7 bg-[#264796] rounded-[10px] sm:flex items-center justify-center lg:w-32 lg:h-11 ">
+                            <Link className="text-white no-underline text-sm lg:text-xl " to="/avstraliya" onClick={() => setIsOpen(false)}>Avstraliya</Link>
+                        </li>
+                        <li className="w-20 h-7 bg-[#264796] rounded-[10px] sm:flex items-center justify-center lg:w-32 lg:h-11 ">
+                            <Link className="text-white no-underline text-sm lg:text-xl " to="/hindiston" onClick={() => setIsOpen(false)}>Hindiston</Link>
+                        </li>
+                        <li className="w-20 h-7 bg-[#264796] rounded-[10px] sm:flex items-center justify-center lg:w-32 lg:h-11">
+                            <Link className="text-white no-underline text-sm lg:text-xl " to="/koreya" onClick={() => setIsOpen(false)}>J. Koreya</Link>
+                        </li>
+                    </section>
                     <button
                         onClick={() => setIsOpen(!isOpen)}
-                        className="menu-btn w-11 h-11 mr-4 xl:mr-6">
+                        className="menu-btn w-11 h-11 mr-4 sm:hidden">
                         <i className="bars fa-solid fa-bars text-2xl text-[#264796]"></i>
                     </button>
                     <section className={`menu fixed top-0 right-0 h-full w-[50%] md:w-[40%] xl:w-[30%] bg-white shadow-lg transform ${isOpen ? "translate-x-0" : "translate-x-full"} z-20 transition-transform duration-500 ease-in-out`}>
                         <button onClick={() => setIsOpen(false)} className="fa-solid fa-x absolute left-4 top-4 text-2xl max-sm:text-lg"></button>
-                        <ul className="ul flex flex-col gap-4 text-2xl mt-20 max-sm:text-lg text-start">
+                        <ul className="ul flex flex-col gap-4 text-2xl mt-20 max-sm:text-lg text-start sm:hidden">
                             <li className={`relative flex flex-row gap-2 items-center sm:gap-3`}>
                                 <img className="w-12 h-8 rounded-xl sm:ml-3" src={eu} alt="european flag" />
                                 <Link className="text-[#264796] no-underline" to="/" onClick={() => setIsOpen(false)}>Shengen</Link>
