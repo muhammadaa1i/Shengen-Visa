@@ -11,7 +11,7 @@ const Avstralia = () => {
                     backgroundPosition: "center"
                 }}>
                 <h1 className="main-text max-w-[500px] text-3xl text-center text-white bg-black uppercase bg-opacity-50 font-semibold leading-[1.2] px-4 py-3 rounded-2xl max-md:max-w-[350px] max-md:text-xl ">
-                    Avstraliya Visasi haqida ma'lumotlar
+                    Avstraliya Visasi haqida ma`lumotlar
                 </h1>
             </div>
         </>
