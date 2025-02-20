@@ -4,11 +4,11 @@ import { useEffect, useState } from "react"
 import '../Layout/Layout.css'
 import eu from '../images/euflag.png'
 import us from '../images/usflag.jpg'
-import gb from '../images/gbflag.png'
 import jp from '../images/jflag.png'
 import av from '../images/avflag.png'
 import i from '../images/inflag.jpg'
 import sk from '../images/skflag.png'
+import ch from '../images/chflag.png'
 
 const Layout = () => {
     const pathname = useLocation()
@@ -34,7 +34,7 @@ const Layout = () => {
                         <img className="w-20 h-[70px] max-md:w-16 max-md:h-16 ml-2 2xl:w-24 2xl:h-24" src={logo} alt="logo of company" />
                     </a>
                     <a className="telephone text-black no-underline font-normal text-base absolute right-16 sm:hidden" href="tel:+998955153030">+998 95 515 30 30</a>
-                    <section className="hidden sm:flex items-center justify-center sm:flex-row gap-2 mr-4 ">
+                    <section className="hidden sm:flex items-center justify-center sm:flex-row gap-2 mr-8">
                         <li className="w-20 h-7 bg-[#264796] rounded-[10px] hidden xl:flex items-center justify-center lg:w-32 lg:h-11 ">
                             <Link className="text-white no-underline text-sm lg:text-xl " to="/" onClick={() => setIsOpen(false)}>Shengen</Link>
                         </li>
@@ -42,7 +42,7 @@ const Layout = () => {
                             <Link className="text-white no-underline text-sm lg:text-xl " to="/aqsh" onClick={() => setIsOpen(false)}>AQSH</Link>
                         </li>
                         <li className="w-20 h-7 bg-[#264796] rounded-[10px] sm:flex items-center justify-center lg:w-32 lg:h-11 ">
-                            <Link className="text-white no-underline text-sm lg:text-xl " to="/britaniya" onClick={() => setIsOpen(false)}>B. Britaniya</Link>
+                            <Link className="text-white no-underline text-sm lg:text-xl " to="/xitoy" onClick={() => setIsOpen(false)}>Xitoy</Link>
                         </li>
                         <li className="w-20 h-7 bg-[#264796] rounded-[10px] sm:flex items-center justify-center lg:w-32 lg:h-11 ">
                             <Link className="text-white no-underline text-sm lg:text-xl " to="/yaponiya" onClick={() => setIsOpen(false)}>Yaponiya</Link>
@@ -80,9 +80,9 @@ const Layout = () => {
                                 )}
                             </li>
                             <li className={`relative flex flex-row gap-2 items-center`}>
-                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={gb} alt="uk flag" />
-                                <Link className="text-[#264796] no-underline" to="/britaniya" onClick={() => setIsOpen(false)}>Buyuk Britaniya</Link>
-                                {pathname.pathname === '/britaniya' && (
+                                <img className="w-12 h-8 rounded-xl sm:ml-3" src={ch} alt="uk flag" />
+                                <Link className="text-[#264796] no-underline" to="/xitoy" onClick={() => setIsOpen(false)}>Xitoy</Link>
+                                {pathname.pathname === '/xitoy' && (
                                     <div className={`underline absolute left-3 bottom-[-6px] max-sm:left-0 ${isOpen ? 'w-[230px]' : 'w-0'} h-[2px] bg-[#264796] transition-all duration-[1000ms] ease-in-out`}></div>
                                 )}
                             </li>

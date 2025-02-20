@@ -2,11 +2,11 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Layout from "./Layout/Layout"
 import Shengen from "./Pages/Shengen/Shengen"
 import AQSH from "./Pages/AQSH/AQSH"
-import Britaniya from "./Pages/Britaniya/Britaniya"
 import Yaponiya from "./Pages/Yaponiya/Yaponiya"
 import Avstralia from "./Pages/Avstralia/Avstralia"
 import Hindiston from "./Pages/Hindiston/Hindiston"
 import Koreya from "./Pages/Koreya/Koreya"
+import Xitoy from "./Pages/Xitoy/XItoy"
 
 const App = () => {
   return (
@@ -15,7 +15,7 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           <Route index element={<Shengen />} />
           <Route path="aqsh" element={<AQSH />} />
-          <Route path="britaniya" element={<Britaniya />} />
+          <Route path="xitoy" element={<Xitoy />} />
           <Route path="yaponiya" element={<Yaponiya />} />
           <Route path="avstraliya" element={<Avstralia />} />
           <Route path="hindiston" element={<Hindiston />} />
