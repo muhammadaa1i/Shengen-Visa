@@ -1,5 +1,6 @@
 import chbg from '../../images/chbg.webp'
 import xitoy from '../../videos/xitoy.mp4'
+import chvid from '../../videos/chvid.mp4'
 
 const Xitoy = () => {
     return (
@@ -15,27 +16,29 @@ const Xitoy = () => {
                     Xitoy Visasi haqida ma`lumotlar
                 </h1>
             </div>
-            <section className="sec container m-auto max-md:px-1 flex flex-col md:flex-row gap-4 max-sm:px-1 items-center">
+            <section className="sec container m-auto max-md:px-1 flex flex-col lg:flex-row gap-4 max-sm:px-1 items-center">
                 <video controls className="sec-video h-[90vh] rounded-3xl mt-5" src={xitoy}></video>
                 <div className="flex flex-col min-h-[350px] justify-evenly">
-                    <div className="bg-[#264796] w-[100%] h-1 rounded-lg" ></div>
+                    <div className="bg-[#264796] w-[100%] h-1 rounded-lg"></div>
                     <h2 className="sec-text text-lg font-medium sm:text-xl ">
                         <p>Xitoy davlatiga istalgan turdagi Viza  xizmatlari  kerak bo`lsa hoziroq bizga murojat qiling!</p>
                         <p>• Birinchi marotaba borayotgan bo’lsanggiz 7-10 kun oralig’ida o’z vizanggizga ega bo’lasiz.</p>
                         <p>• Oldin Xitoy davlatiga borib kelgan bo’lsanggiz 3-5 kunda o’z vizanggizga ega bo’lasiz.</p>
                         <p>• Viza berish  ehtimoli 100%</p>
                     </h2>
-                    <div className="bg-[#264796] w-[100%] h-1 rounded-lg" ></div>
+                    <div className="bg-[#264796] w-[100%] h-1 rounded-lg"></div>
                 </div>
             </section>
-            <section className="sec2 container m-auto max-md:px-1 flex flex-col md:flex-row gap-4 max-sm:px-1 items-center">
+            <section className="sec2 container m-auto max-md:px-1 flex flex-col lg:flex-row gap-4 max-sm:px-1 items-center">
+                <video controls className="sec-video h-[90vh] rounded-3xl md:ml-6 xl:ml-0 mt-4" src={chvid}></video>
                 <div className="flex flex-col min-h-[350px] justify-evenly px-2">
-                    <h2 className="sec2-text text-lg font-medium sm:text-xl px-2">
+                    <div className="bg-[#264796] w-[100%] h-1 rounded-lg"></div>
+                    <div className="sec2-text text-lg font-medium sm:text-xl px-2">
                         <p>Agarda sizga ham Xitoy vizasi kerak bo`lsa hoziroq bizga murojat qiling!</p>
                         <p>• Viza tarixi talab qilmaydi.</p>
                         <p>• 7 kunda tasdiqlanadi</p>
                         <p>• 3 oy   muddatga beriladi, 30 kun yurish ruxsati bilan</p>
-                    </h2>
+                    </div>
                     <div className="bg-[#264796] w-[100%] h-1 rounded-lg" ></div>
                 </div>
             </section>

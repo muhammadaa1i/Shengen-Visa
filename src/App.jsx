@@ -3,10 +3,8 @@ import Layout from "./Layout/Layout"
 import Shengen from "./Pages/Shengen/Shengen"
 import AQSH from "./Pages/AQSH/AQSH"
 import Yaponiya from "./Pages/Yaponiya/Yaponiya"
-import Avstralia from "./Pages/Avstralia/Avstralia"
-import Hindiston from "./Pages/Hindiston/Hindiston"
-import Koreya from "./Pages/Koreya/Koreya"
 import Xitoy from "./Pages/Xitoy/XItoy"
+import Kanada from "./Pages/Kanada/Kanada"
 
 const App = () => {
   return (
@@ -17,9 +15,7 @@ const App = () => {
           <Route path="aqsh" element={<AQSH />} />
           <Route path="xitoy" element={<Xitoy />} />
           <Route path="yaponiya" element={<Yaponiya />} />
-          <Route path="avstraliya" element={<Avstralia />} />
-          <Route path="hindiston" element={<Hindiston />} />
-          <Route path="koreya" element={<Koreya />} />
+          <Route path="kanada" element={<Kanada />} />
         </Route>
       </Routes>
     </BrowserRouter>
