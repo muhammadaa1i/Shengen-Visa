@@ -169,10 +169,10 @@ const Layout = () => {
                         <section className="form max-w-[250px] w-full h-auto flex flex-col gap-2">
                             <h1 className="text-lg font-medium uppercase sm:text-xl">{t('Ariza qoldirish')}</h1>
                             <form id="myForm" className="w-[250px] h-auto flex flex-col gap-3 ">
-                                <input required minLength={3} type="text" placeholder="Ismingiz" className="w-[250px] p-1 outline-none text-black" />
-                                <input required minLength={3} type="text" placeholder="Familiyangiz" className="w-[250px] p-1 outline-none text-black" />
-                                <input required minLength={9} type="number" placeholder="Telefon raqamingiz" className="w-[250px] p-1 outline-none text-black" />
-                                <textarea required minLength={3} className="w-[250px] h-[150px] text-black bg-white py-[10px] pl-[5px] outline-none" placeholder="Fikringiz"></textarea>
+                                <input required minLength={3} type="text" placeholder={t("Ismingiz")} className="w-[250px] p-1 outline-none text-black" />
+                                <input required minLength={3} type="text" placeholder={t("Familiyangiz")} className="w-[250px] p-1 outline-none text-black" />
+                                <input required minLength={9} type="number" placeholder={t("Telefon raqamingiz")} className="w-[250px] p-1 outline-none text-black" />
+                                <textarea required minLength={3} className="w-[250px] h-[150px] text-black bg-white py-[10px] pl-[5px] outline-none" placeholder={t("Fikringiz")}></textarea>
                                 <button type="submit" className="w-[250px] h-8 bg-[#6687d4] text-black rounded-lg ">
                                     {t('Yuborish')}
                                 </button>
